@@ -13,7 +13,12 @@ public class itemslot : MonoBehaviour, IDropHandler {
             eventData.pointerDrag.GetComponent<RectTransform>().anchoredPosition = GetComponent<RectTransform>().anchoredPosition;
             //this makes the items snapp into place
         }
+        // plays audio when placing objoect
+        GetComponent <AudioSource>().Play();
+
+
     }
+
 
 
 
