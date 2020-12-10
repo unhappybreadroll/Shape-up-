@@ -12,25 +12,25 @@ public class Pause : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-               if (isGamePaused)
+            if (isGamePaused)
             {
                 ResumeGame();
             }
-               else
+            else
             {
                 PauseGame();
             }
         }
     }
 
-        public void ResumeGame()
+    public void ResumeGame()
     {
         pauseMenu.SetActive(false);
         Time.timeScale = 1f;
         isGamePaused = false;
     }
 
-   public void PauseGame()
+    public void PauseGame()
     {
         pauseMenu.SetActive(true);
         Time.timeScale = 0f;
@@ -39,7 +39,7 @@ public class Pause : MonoBehaviour
 
     public void LoadMenue()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex); 
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
     public void QuitGame()
     {
